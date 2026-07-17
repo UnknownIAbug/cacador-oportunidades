@@ -3,6 +3,11 @@ import telebot
 
 TOKEN = os.getenv("TOKEN")
 
+
+print("TOKEN EXISTE:", TOKEN is not None)
+print("TOKEN TAMANHO:", len(TOKEN) if TOKEN else 0)
+
+
 bot = telebot.TeleBot(TOKEN)
 
 
